@@ -1,5 +1,5 @@
 // Initialize your app
-var uniApp = new Framework7({
+var hookroomsApp = new Framework7({
     modalTitle: 'My App',
     // If it is webapp, we can enable hash navigation:
     pushState: true,
@@ -29,10 +29,10 @@ var uniApp = new Framework7({
 	
     // Hide and show indicator during ajax requests
     onAjaxStart: function (xhr) {
-        uniApp.showIndicator();
+        hookroomsApp.showIndicator();
     },
     onAjaxComplete: function (xhr) {
-        uniApp.hideIndicator();
+        hookroomsApp.hideIndicator();
     },
 
 });
@@ -40,7 +40,7 @@ var uniApp = new Framework7({
 // Export selectors engine
 var $$ = Dom7;
 // Add view
-var mainView = uniApp.addView('.view-main', {
+var mainView = hookroomsApp.addView('.view-main', {
    domCache: true,
 });
 
@@ -50,7 +50,7 @@ var TPHotelUrl ='https://hotelsapp.uni-booking.com/hotels';
 var TPFlightUrl ='https://flightsapp.uni-booking.com/flights';
 var marker='174518';
 
-uniApp.onPageInit('index', function (page) {
+hookroomsApp.onPageInit('index', function (page) {
 $$('.pageFlashLoaderKK').show();	
 setTimeout(function(){ $$('.pageFlashLoaderKK').hide('slow'); }, 3000);	
 
@@ -75,7 +75,7 @@ var startDate_txt = weekday[strDate.getDay()]+', '+strDate.getDate()+' '+monthNa
 var endDate_txt = weekday[enrDate.getDay()]+', '+enrDate.getDate()+' '+monthNames[(enrDate.getMonth()+1)]+' '+enrDate.getFullYear().toString().substr(-2);
 
 
-var htmlHotel ='<div class="history-home-page-main-left"><i class="fa fa-home"></i></div><a href="'+TPHotelUrl+'?marker='+marker+'&destination=New Delhi&checkIn='+checkIn+'&checkOut='+checkOut+'&adults=2&children=&language=en&currency=USD&&cityId=24077" class="link external"><div class="history-home-page-main-right"><div class="history-home-text">New Delhi</div><div class="history-home-text1">'+startDate_txt+' - '+endDate_txt+'</div><div class="history-home-text2"><i class="fa fa-user"></i> 2 Guests </div><div class="history-home-text3"><i class="fa fa-bed"></i>1 Room </div></a></div>';
+var htmlHotel ='<div class="history-home-page-main-left"><i class="fa fa-home"></i></div><a href="'+TPHotelUrl+'?marker='+marker+'&destination=Las Vegas, NV, USA&checkIn='+checkIn+'&checkOut='+checkOut+'&adults=2&children=&language=en&currency=USD&&cityId=20703" class="link external"><div class="history-home-page-main-right"><div class="history-home-text">Las Vegas, NV, USA</div><div class="history-home-text1">'+startDate_txt+' - '+endDate_txt+'</div><div class="history-home-text2"><i class="fa fa-user"></i> 2 Guests </div><div class="history-home-text3"><i class="fa fa-bed"></i>1 Room </div></a></div>';
 $$('#storeHotelLists').html(htmlHotel);
 
 var htmlFlight ='<div class="history-home-page-main-left">'+
@@ -133,7 +133,7 @@ if(page.name=='search-hotels'){
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 	
     var today =new Date();
-	var calendarRange = uniApp.calendar({
+	var calendarRange = hookroomsApp.calendar({
     input: '#appCalendar',
     dateFormat: 'M dd yyyy',
     rangePicker: true,
@@ -323,7 +323,7 @@ if(page.name=='search-hotels'){
   
   
   /*=== Auto suggetion ===*/
-  var autocompleteDropdownAjax = uniApp.autocomplete({
+  var autocompleteDropdownAjax = hookroomsApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup'),
     openIn: 'popup',
 	backOnSelect: true,
@@ -380,8 +380,8 @@ if(page.name=='search-hotels'){
   
    var hotelObject = [];
    $$('.findHotelResults').on('click', function(e){
-	   var formData = uniApp.formToData('#searchHotel_frm');
-	   uniApp.formStoreData('HotelRequestData',formData);
+	   var formData = hookroomsApp.formToData('#searchHotel_frm');
+	   hookroomsApp.formStoreData('HotelRequestData',formData);
 	  
 	 var adults =$$('#adults_0').val(); 
 	 var childs =$$('#childs_0').val();
@@ -430,7 +430,7 @@ if(page.name=='search-flights'){
     var weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var today =new Date();
-	var calendarRange = uniApp.calendar({
+	var calendarRange = hookroomsApp.calendar({
 	input: '#appCalendar',
 	dateFormat: 'M dd yyyy',
 	rangePicker: true,
@@ -455,7 +455,7 @@ if(page.name=='search-flights'){
 	   }
 	});	
    /*=== Activity Auto suggetion ===*/	
-   var autocompleteDropdownAjax = uniApp.autocomplete({
+   var autocompleteDropdownAjax = hookroomsApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup'),
 	openIn: 'popup',
 	backOnSelect: true,
@@ -501,7 +501,7 @@ if(page.name=='search-flights'){
 	}
   });
 
-  var autocompleteDropdownAjax = uniApp.autocomplete({
+  var autocompleteDropdownAjax = hookroomsApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup-to'),
 	openIn: 'popup',
 	backOnSelect: true,
