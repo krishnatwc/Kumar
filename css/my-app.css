@@ -4,17 +4,14 @@
 .card-content-inner1{position: absolute;top: 127px;left: 0px;right: 0px;overflow-y: hidden;}
 .titeltext{font-size:15px;color:#dd3333;padding:7px 7px 7px 8px;font-weight:500;text-align:center}
 .buttonspace{    min-height: 52px;}
-
 .buttoncol{padding:35px;width:50%;height:50%;text-align:center}
-
-
-.contentblock1{/*justify-content: center;display: flex; */}
+.contentblock1{/*justify-content: center;display: flex; */width: 60%;margin: 0 auto;margin-top: 32px;}
 .contentblock1 li{float: left;width: 50%;text-align: center;}
 .contentblock1 li:first-child{}
 .contentblock1 li a{}
-.contentblock1 li a i{font-size: 30px;}
+.contentblock1 li a i{font-size: 25px;}
 .buttonhomecard .card-content{width: 100%;margin: 0 auto;}
-.contentblock1 li a .displaysection {font-size: 25px;float: left;width: 100%;}
+.contentblock1 li a .displaysection {font-size: 17px;float: left;width: 100%;}
 .buttonhomecard{background-color: transparent;float: left;width: 100%;margin: 60px 0px 48px 0px;box-shadow: none;}
 .carBackColor{}
 .colorIcons{color:#ddd}.colorIcons i{color:#ddd;background-color:#ddd}
@@ -552,12 +549,12 @@ margin-top: 10%;}
 .search-flightspage .navbar-inner{box-shadow: 0 2px 12px rgba(0,0,0,.175);}	
 .search-flightspage .page-content{padding-top: 56px !important;}
 .BontentBlockDrawer{padding-top: 0px !important;}	
-.BontentBlockDrawer .panel-background{background:url(../img/mobile_back.png) center no-repeat;background-size: cover;margin: 0px;min-height: 200px;position:relative;}	
+.BontentBlockDrawer .panel-background{background:url(../img/mobile_back.png) center no-repeat;background-size: cover;margin: 0px;min-height: 200px;position:relative;border-bottom: 10px solid #ed1d24;}	
 .BontentBlockDrawer .content-block p{margin: 0px;position: relative;z-index: 9;}	
-.overlayContent{position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;    background-color: rgba(255, 255, 255, 0.5);z-index: 2;cursor: pointer;}
-.mobileLogo{position: absolute;top: 10em;left: 0px;right: 0pc;}	
+.overlayContent{position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;    background-color: rgba(255, 255, 255,1.5);z-index: 2;cursor: pointer;}
+.mobileLogo{position: absolute;top: 8em;left: -9px;right: 0px;}	
 .panel-background .close-panel{float: right;}
-.panel-background .close-panel .fa{font-size: 25px;color: #fff;font-weight: 100;position: relative;top: 10px;}
+.panel-background .close-panel .fa{font-size: 25px;color: #000;font-weight: 100;position: relative;top: 10px;}
 .list-menu-mobile{}	
 .list-menu-mobile ul{list-style: none;margin: 0px;padding: 0px;}
 .list-menu-mobile ul li{}
@@ -837,17 +834,18 @@ margin-top: 10%;}
 .colmborders{padding: 5px 22px;}
 .language-detail-page .toolbar-inner a{border-right: 1px solid #8BC34A; border-left: 0px solid #8BC34A;text-transform: capitalize;color: #fff;}
 .Searchall{text-align: center;color: #fff;font-size: 17px;}
-.contentblock1 li a{    border: 1px solid #fff;
-    color: #ffffff !important;
+.contentblock1 li a{
+	color: #ffffff !important;
     display: inline-block;
-    padding: 29px 19px;
+    padding: 25px 19px;
     background-color: rgb(237, 29, 36);
-    width: 96%;
     border-radius: 100%;
-    height: 133px;
-    width: 140px;
-    box-shadow: 0px 1px 5px #000000;}
-.HomeLogoimg{text-align: center;float: left;width: 100%;}
+    height: 96px;
+    width: 96px;
+    box-shadow: 0px 1px 5px #000000;
+}
+.HomeLogoimg{text-align: center;float: left;width: 100%;padding: 0% 15%;}
+.HomeLogoimg img{width: 100%;}
 .history-recents{}
 .history-recents-left{float:left;width:100%;}
 .deltopatfri1{float: left;width: 70%;}
@@ -857,10 +855,11 @@ margin-top: 10%;}
 .deltopatfri span .fa{padding: 0px 30px;}
 .economyadlet{padding-left: 30px;}
 .economyadlet .fa{}
-.lds-grid-loading{position: fixed;z-index: 9999;text-align: center;height: 100%;width: 100%;background-color: rgb(43, 43, 43);}
-.lds-grid{position: absolute;top: 35%;left: 0px;right: 0px;}
-
+.lds-grid-loading{position: fixed;z-index: 9999;text-align: center;height: 100%;width: 100%;background-color: rgb(255, 255, 255);padding: 10% 0% 25% 0%;}
+.lds-grid-loading .lds-grid img{width: 100%;}
+.lds-grid-loading .lds-grid{padding: 10%;}
 .icon-bars-black{color: #000;}
+.mobileLogo img{width:100%;}
 
 
 
