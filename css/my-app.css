@@ -552,7 +552,7 @@ margin-top: 10%;}
 .BontentBlockDrawer .panel-background{background:url(../img/mobile_back.png) center no-repeat;background-size: cover;margin: 0px;min-height: 200px;position:relative;border-bottom: 10px solid #ed1d24;}	
 .BontentBlockDrawer .content-block p{margin: 0px;position: relative;z-index: 9;}	
 .overlayContent{position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;    background-color: rgba(255, 255, 255,1.5);z-index: 2;cursor: pointer;}
-.mobileLogo{position: absolute;top: 8em;left: -9px;right: 0px;}	
+.mobileLogo{position: absolute;top: 3em;left: -9px;right: 0px;}	
 .panel-background .close-panel{float: right;}
 .panel-background .close-panel .fa{font-size: 25px;color: #000;font-weight: 100;position: relative;top: 10px;}
 .list-menu-mobile{}	
