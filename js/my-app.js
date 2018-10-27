@@ -46,9 +46,9 @@ var mainView = hookroomsApp.addView('.view-main', {
 
 
 var RequestURL ='https://www.adivaha.com/demo/MobAppRequest';
-var TPHotelUrl ='https://hotelsapp.uni-booking.com/hotels';
-var TPFlightUrl ='https://flightsapp.uni-booking.com/flights';
-var marker='174518';
+var TPHotelUrl ='https://hotels.hookrooms.com/hotels';
+var TPFlightUrl ='https://flightt.hookrooms.com/flights';
+var marker='134905';
 
 hookroomsApp.onPageInit('index', function (page) {
 $$('.pageFlashLoaderKK').show();	
